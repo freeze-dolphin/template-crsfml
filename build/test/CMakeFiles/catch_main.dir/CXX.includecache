@@ -590,7 +590,7 @@ algorithm
 cassert
 -
 
-/workspace/template-cpp/test/catch_main.cpp
+/workspace/template-crsfml/test/catch_main.cpp
 catch2/catch.hpp
 -
 

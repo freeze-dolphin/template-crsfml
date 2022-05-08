@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/template-cpp
+CMAKE_SOURCE_DIR = /workspace/template-crsfml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/template-cpp/build
+CMAKE_BINARY_DIR = /workspace/template-crsfml/build
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/relaxed_constexpr_tests.dir/depend.make
@@ -59,16 +59,16 @@ include test/CMakeFiles/relaxed_constexpr_tests.dir/flags.make
 
 test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o: test/CMakeFiles/relaxed_constexpr_tests.dir/flags.make
 test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o: ../test/constexpr_tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/template-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o"
-	cd /workspace/template-cpp/build/test && /usr/bin/ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o -c /workspace/template-cpp/test/constexpr_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/template-crsfml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o"
+	cd /workspace/template-crsfml/build/test && /usr/bin/ccache /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o -c /workspace/template-crsfml/test/constexpr_tests.cpp
 
 test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.i"
-	cd /workspace/template-cpp/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/template-cpp/test/constexpr_tests.cpp > CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.i
+	cd /workspace/template-crsfml/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/template-crsfml/test/constexpr_tests.cpp > CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.i
 
 test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.s"
-	cd /workspace/template-cpp/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/template-cpp/test/constexpr_tests.cpp -o CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.s
+	cd /workspace/template-crsfml/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/template-crsfml/test/constexpr_tests.cpp -o CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.s
 
 # Object files for target relaxed_constexpr_tests
 relaxed_constexpr_tests_OBJECTS = \
@@ -81,9 +81,9 @@ bin/relaxed_constexpr_tests: test/CMakeFiles/relaxed_constexpr_tests.dir/constex
 bin/relaxed_constexpr_tests: test/CMakeFiles/relaxed_constexpr_tests.dir/build.make
 bin/relaxed_constexpr_tests: lib/libcatch_main.a
 bin/relaxed_constexpr_tests: test/CMakeFiles/relaxed_constexpr_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/template-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/relaxed_constexpr_tests"
-	cd /workspace/template-cpp/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/relaxed_constexpr_tests.dir/link.txt --verbose=$(VERBOSE)
-	cd /workspace/template-cpp/build/test && /usr/bin/cmake -D TEST_TARGET=relaxed_constexpr_tests -D TEST_EXECUTABLE=/workspace/template-cpp/build/bin/relaxed_constexpr_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/workspace/template-cpp/build/test -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX=relaxed_constexpr. -D TEST_SUFFIX= -D TEST_LIST=relaxed_constexpr_tests_TESTS -D TEST_REPORTER=xml -D TEST_OUTPUT_DIR=. -D TEST_OUTPUT_PREFIX=relaxed_constexpr. -D TEST_OUTPUT_SUFFIX=.xml -D CTEST_FILE=/workspace/template-cpp/build/test/relaxed_constexpr_tests_tests-1418042.cmake -P /home/gitpod/.conan/data/catch2/2.13.3/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib/cmake/Catch2/CatchAddTests.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/template-crsfml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/relaxed_constexpr_tests"
+	cd /workspace/template-crsfml/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/relaxed_constexpr_tests.dir/link.txt --verbose=$(VERBOSE)
+	cd /workspace/template-crsfml/build/test && /usr/bin/cmake -D TEST_TARGET=relaxed_constexpr_tests -D TEST_EXECUTABLE=/workspace/template-crsfml/build/bin/relaxed_constexpr_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/workspace/template-crsfml/build/test -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX=relaxed_constexpr. -D TEST_SUFFIX= -D TEST_LIST=relaxed_constexpr_tests_TESTS -D TEST_REPORTER=xml -D TEST_OUTPUT_DIR=. -D TEST_OUTPUT_PREFIX=relaxed_constexpr. -D TEST_OUTPUT_SUFFIX=.xml -D CTEST_FILE=/workspace/template-crsfml/build/test/relaxed_constexpr_tests_tests-1418042.cmake -P /home/gitpod/.conan/data/catch2/2.13.3/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib/cmake/Catch2/CatchAddTests.cmake
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/relaxed_constexpr_tests.dir/build: bin/relaxed_constexpr_tests
@@ -91,10 +91,10 @@ test/CMakeFiles/relaxed_constexpr_tests.dir/build: bin/relaxed_constexpr_tests
 .PHONY : test/CMakeFiles/relaxed_constexpr_tests.dir/build
 
 test/CMakeFiles/relaxed_constexpr_tests.dir/clean:
-	cd /workspace/template-cpp/build/test && $(CMAKE_COMMAND) -P CMakeFiles/relaxed_constexpr_tests.dir/cmake_clean.cmake
+	cd /workspace/template-crsfml/build/test && $(CMAKE_COMMAND) -P CMakeFiles/relaxed_constexpr_tests.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/relaxed_constexpr_tests.dir/clean
 
 test/CMakeFiles/relaxed_constexpr_tests.dir/depend:
-	cd /workspace/template-cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/template-cpp /workspace/template-cpp/test /workspace/template-cpp/build /workspace/template-cpp/build/test /workspace/template-cpp/build/test/CMakeFiles/relaxed_constexpr_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspace/template-crsfml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/template-crsfml /workspace/template-crsfml/test /workspace/template-crsfml/build /workspace/template-crsfml/build/test /workspace/template-crsfml/build/test/CMakeFiles/relaxed_constexpr_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/relaxed_constexpr_tests.dir/depend
 

@@ -590,7 +590,7 @@ algorithm
 cassert
 -
 
-/workspace/template-cpp/test/constexpr_tests.cpp
+/workspace/template-crsfml/test/constexpr_tests.cpp
 catch2/catch.hpp
 -
 

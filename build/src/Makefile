@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/template-cpp
+CMAKE_SOURCE_DIR = /workspace/template-crsfml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/template-cpp/build
+CMAKE_BINARY_DIR = /workspace/template-crsfml/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/template-cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/template-cpp/build/CMakeFiles /workspace/template-cpp/build/src/CMakeFiles/progress.marks
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/template-cpp/build/CMakeFiles 0
+	cd /workspace/template-crsfml/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/template-crsfml/build/CMakeFiles /workspace/template-crsfml/build/src/CMakeFiles/progress.marks
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/template-crsfml/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/template-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/template-crsfml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/intro.dir/rule:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/intro.dir/rule
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/intro.dir/rule
 .PHONY : src/CMakeFiles/intro.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ intro: src/CMakeFiles/intro.dir/rule
 
 # fast build rule for target.
 intro/fast:
-	cd /workspace/template-cpp/build && $(MAKE) -f src/CMakeFiles/intro.dir/build.make src/CMakeFiles/intro.dir/build
+	cd /workspace/template-crsfml/build && $(MAKE) -f src/CMakeFiles/intro.dir/build.make src/CMakeFiles/intro.dir/build
 .PHONY : intro/fast
 
 main.o: main.cpp.o
@@ -142,7 +142,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /workspace/template-cpp/build && $(MAKE) -f src/CMakeFiles/intro.dir/build.make src/CMakeFiles/intro.dir/main.cpp.o
+	cd /workspace/template-crsfml/build && $(MAKE) -f src/CMakeFiles/intro.dir/build.make src/CMakeFiles/intro.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -151,7 +151,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /workspace/template-cpp/build && $(MAKE) -f src/CMakeFiles/intro.dir/build.make src/CMakeFiles/intro.dir/main.cpp.i
+	cd /workspace/template-crsfml/build && $(MAKE) -f src/CMakeFiles/intro.dir/build.make src/CMakeFiles/intro.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -160,7 +160,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /workspace/template-cpp/build && $(MAKE) -f src/CMakeFiles/intro.dir/build.make src/CMakeFiles/intro.dir/main.cpp.s
+	cd /workspace/template-crsfml/build && $(MAKE) -f src/CMakeFiles/intro.dir/build.make src/CMakeFiles/intro.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -187,6 +187,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/template-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/template-crsfml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

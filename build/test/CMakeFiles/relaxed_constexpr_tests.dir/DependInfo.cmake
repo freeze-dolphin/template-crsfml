@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/workspace/template-cpp/test/constexpr_tests.cpp" "/workspace/template-cpp/build/test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o"
+  "/workspace/template-crsfml/test/constexpr_tests.cpp" "/workspace/template-crsfml/build/test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/workspace/template-cpp/build/test/CMakeFiles/catch_main.dir/DependInfo.cmake"
+  "/workspace/template-crsfml/build/test/CMakeFiles/catch_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

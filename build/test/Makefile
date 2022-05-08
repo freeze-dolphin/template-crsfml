@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/template-cpp
+CMAKE_SOURCE_DIR = /workspace/template-crsfml
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/template-cpp/build
+CMAKE_BINARY_DIR = /workspace/template-crsfml/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspace/template-cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/template-cpp/build/CMakeFiles /workspace/template-cpp/build/test/CMakeFiles/progress.marks
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/template-cpp/build/CMakeFiles 0
+	cd /workspace/template-crsfml/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/template-crsfml/build/CMakeFiles /workspace/template-crsfml/build/test/CMakeFiles/progress.marks
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/template-crsfml/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspace/template-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/template-crsfml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/relaxed_constexpr_tests.dir/rule:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/relaxed_constexpr_tests.dir/rule
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/relaxed_constexpr_tests.dir/rule
 .PHONY : test/CMakeFiles/relaxed_constexpr_tests.dir/rule
 
 # Convenience name for target.
@@ -133,12 +133,12 @@ relaxed_constexpr_tests: test/CMakeFiles/relaxed_constexpr_tests.dir/rule
 
 # fast build rule for target.
 relaxed_constexpr_tests/fast:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/relaxed_constexpr_tests.dir/build.make test/CMakeFiles/relaxed_constexpr_tests.dir/build
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/relaxed_constexpr_tests.dir/build.make test/CMakeFiles/relaxed_constexpr_tests.dir/build
 .PHONY : relaxed_constexpr_tests/fast
 
 # Convenience name for target.
 test/CMakeFiles/constexpr_tests.dir/rule:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/constexpr_tests.dir/rule
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/constexpr_tests.dir/rule
 .PHONY : test/CMakeFiles/constexpr_tests.dir/rule
 
 # Convenience name for target.
@@ -148,12 +148,12 @@ constexpr_tests: test/CMakeFiles/constexpr_tests.dir/rule
 
 # fast build rule for target.
 constexpr_tests/fast:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/constexpr_tests.dir/build.make test/CMakeFiles/constexpr_tests.dir/build
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/constexpr_tests.dir/build.make test/CMakeFiles/constexpr_tests.dir/build
 .PHONY : constexpr_tests/fast
 
 # Convenience name for target.
 test/CMakeFiles/tests.dir/rule:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tests.dir/rule
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tests.dir/rule
 .PHONY : test/CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -163,12 +163,12 @@ tests: test/CMakeFiles/tests.dir/rule
 
 # fast build rule for target.
 tests/fast:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
 # Convenience name for target.
 test/CMakeFiles/catch_main.dir/rule:
-	cd /workspace/template-cpp/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/catch_main.dir/rule
+	cd /workspace/template-crsfml/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/catch_main.dir/rule
 .PHONY : test/CMakeFiles/catch_main.dir/rule
 
 # Convenience name for target.
@@ -178,7 +178,7 @@ catch_main: test/CMakeFiles/catch_main.dir/rule
 
 # fast build rule for target.
 catch_main/fast:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/catch_main.dir/build.make test/CMakeFiles/catch_main.dir/build
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/catch_main.dir/build.make test/CMakeFiles/catch_main.dir/build
 .PHONY : catch_main/fast
 
 catch_main.o: catch_main.cpp.o
@@ -187,7 +187,7 @@ catch_main.o: catch_main.cpp.o
 
 # target to build an object file
 catch_main.cpp.o:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/catch_main.dir/build.make test/CMakeFiles/catch_main.dir/catch_main.cpp.o
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/catch_main.dir/build.make test/CMakeFiles/catch_main.dir/catch_main.cpp.o
 .PHONY : catch_main.cpp.o
 
 catch_main.i: catch_main.cpp.i
@@ -196,7 +196,7 @@ catch_main.i: catch_main.cpp.i
 
 # target to preprocess a source file
 catch_main.cpp.i:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/catch_main.dir/build.make test/CMakeFiles/catch_main.dir/catch_main.cpp.i
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/catch_main.dir/build.make test/CMakeFiles/catch_main.dir/catch_main.cpp.i
 .PHONY : catch_main.cpp.i
 
 catch_main.s: catch_main.cpp.s
@@ -205,7 +205,7 @@ catch_main.s: catch_main.cpp.s
 
 # target to generate assembly for a file
 catch_main.cpp.s:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/catch_main.dir/build.make test/CMakeFiles/catch_main.dir/catch_main.cpp.s
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/catch_main.dir/build.make test/CMakeFiles/catch_main.dir/catch_main.cpp.s
 .PHONY : catch_main.cpp.s
 
 constexpr_tests.o: constexpr_tests.cpp.o
@@ -214,8 +214,8 @@ constexpr_tests.o: constexpr_tests.cpp.o
 
 # target to build an object file
 constexpr_tests.cpp.o:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/relaxed_constexpr_tests.dir/build.make test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/constexpr_tests.dir/build.make test/CMakeFiles/constexpr_tests.dir/constexpr_tests.cpp.o
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/relaxed_constexpr_tests.dir/build.make test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.o
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/constexpr_tests.dir/build.make test/CMakeFiles/constexpr_tests.dir/constexpr_tests.cpp.o
 .PHONY : constexpr_tests.cpp.o
 
 constexpr_tests.i: constexpr_tests.cpp.i
@@ -224,8 +224,8 @@ constexpr_tests.i: constexpr_tests.cpp.i
 
 # target to preprocess a source file
 constexpr_tests.cpp.i:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/relaxed_constexpr_tests.dir/build.make test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.i
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/constexpr_tests.dir/build.make test/CMakeFiles/constexpr_tests.dir/constexpr_tests.cpp.i
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/relaxed_constexpr_tests.dir/build.make test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.i
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/constexpr_tests.dir/build.make test/CMakeFiles/constexpr_tests.dir/constexpr_tests.cpp.i
 .PHONY : constexpr_tests.cpp.i
 
 constexpr_tests.s: constexpr_tests.cpp.s
@@ -234,8 +234,8 @@ constexpr_tests.s: constexpr_tests.cpp.s
 
 # target to generate assembly for a file
 constexpr_tests.cpp.s:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/relaxed_constexpr_tests.dir/build.make test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.s
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/constexpr_tests.dir/build.make test/CMakeFiles/constexpr_tests.dir/constexpr_tests.cpp.s
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/relaxed_constexpr_tests.dir/build.make test/CMakeFiles/relaxed_constexpr_tests.dir/constexpr_tests.cpp.s
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/constexpr_tests.dir/build.make test/CMakeFiles/constexpr_tests.dir/constexpr_tests.cpp.s
 .PHONY : constexpr_tests.cpp.s
 
 tests.o: tests.cpp.o
@@ -244,7 +244,7 @@ tests.o: tests.cpp.o
 
 # target to build an object file
 tests.cpp.o:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/tests.cpp.o
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/tests.cpp.o
 .PHONY : tests.cpp.o
 
 tests.i: tests.cpp.i
@@ -253,7 +253,7 @@ tests.i: tests.cpp.i
 
 # target to preprocess a source file
 tests.cpp.i:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/tests.cpp.i
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/tests.cpp.i
 .PHONY : tests.cpp.i
 
 tests.s: tests.cpp.s
@@ -262,7 +262,7 @@ tests.s: tests.cpp.s
 
 # target to generate assembly for a file
 tests.cpp.s:
-	cd /workspace/template-cpp/build && $(MAKE) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/tests.cpp.s
+	cd /workspace/template-crsfml/build && $(MAKE) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/tests.cpp.s
 .PHONY : tests.cpp.s
 
 # Help Target
@@ -298,6 +298,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspace/template-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/template-crsfml/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

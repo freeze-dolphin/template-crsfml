@@ -558,7 +558,7 @@ spdlog-inl.h
 
 /home/gitpod/.conan/data/spdlog/1.5.0/_/_/package/12c8590eca64ca13d7eac957bde897f3a31c0f6e/include/spdlog/version.h
 
-/workspace/template-cpp/src/main.cpp
+/workspace/template-crsfml/src/main.cpp
 functional
 -
 iostream

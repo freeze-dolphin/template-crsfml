@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/template-cpp/src
+# Install script for directory: /workspace/template-crsfml/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
