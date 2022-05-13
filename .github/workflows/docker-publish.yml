@@ -1,0 +1,50 @@
+name: Docker
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+on:
+  schedule:
+    - cron: '16 23 * * *'
+  push:
+    branches: [ master ]
+    # Publish semver tags as releases.
+    tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  # Use docker.io for Docker Hub if empty
+  REGISTRY: ghcr.io
+  # github.repository as <account>/<repo>
+  IMAGE_NAME: ${{ github.repository }}
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      # This is used to complete the identity challenge
+      # with sigstore/fulcio when running outside of PRs.
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Publish Docker
+        # You may pin to the exact commit or the version.
+        # uses: elgohr/Publish-Docker-Github-Action@5cabf408f3e51aa4f2b6de393a4f57db97967c78
+        uses: elgohr/Publish-Docker-Github-Action@v4
+        with:
+          # The name of the image you would like to push
+          name: freeze-dolphin/template-crsfml
+          # The login username for the registry
+          username: ${{ secrets.DOCKER_USERNAME }}
+          # The login password for the registry
+          password: ${{ secrets.DOCKER_PASSWORD }}
